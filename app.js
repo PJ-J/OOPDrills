@@ -37,9 +37,9 @@ class Truck extends Vehicle {
     this.numOfDoors = 4;
     this.bed = true;
     console.log(
-      `This is a ${this.type}, made by ${this.manufacturer}, and it has ${this.numOfWheels} wheels and ${this.numOfDoors} doors.`
+      `This is a ${this.type} made by ${this.manufacturer}, and it has ${this.numOfWheels} wheels and ${this.numOfDoors} doors.`
     );
-    if (this.bed === true) {
+    if (this.bed) {
       console.log(`This does have a truck bed.`);
     }
   }
@@ -59,9 +59,9 @@ class Sedan extends Vehicle {
     this.mpg = "30";
     this.bed = false;
     console.log(
-      `This is a ${this.type}, made by ${this.manufacturer}, and it has ${this.numOfWheels} wheels and ${this.numOfDoors} doors. It is ${this.size} and gets ${this.mpg} miles per gallon`
+      `This is a ${this.type} made by ${this.manufacturer}, and it has ${this.numOfWheels} wheels and ${this.numOfDoors} doors. It is ${this.size} and gets ${this.mpg} miles per gallon`
     );
-    if (this.bed === false) {
+    if (!this.bed) {
       console.log(`This does not have a truck bed.`);
     }
   }
@@ -82,12 +82,12 @@ class Motorcycle extends Vehicle {
     this.bed = false;
     this.handlebars = true;
     console.log(
-      `This is a ${this.type}, made by ${this.manufacturer}, and it has ${this.numOfWheels} wheels and ${this.numOfDoors} doors.`
+      `This is a ${this.type} made by ${this.manufacturer}, and it has ${this.numOfWheels} wheels and ${this.numOfDoors} doors.`
     );
-    if (this.bed === false) {
+    if (!this.bed) {
       console.log(`This does not have a truck bed.`);
     }
-    if (this.handlebars === true) {
+    if (this.handlebars) {
       console.log(`This does have handlebars.`);
     }
   }
